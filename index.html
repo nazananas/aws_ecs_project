@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 220px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .content {
+            margin-top: 25px;
+            text-align: left;
+        }
+        .local-image {
+            margin-top: 20px;
+        }
+        .local-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Test Page</h1>
+        <p>This page is created for testing purposes.</p>
+        <p>Author: nazananas</p>
+        
+        <div class="image-gallery">
+            <img src="https://picsum.photos/220/160?random=1" alt="Image 1">
+            <img src="https://picsum.photos/220/160?random=2" alt="Image 2">
+            <img src="https://picsum.photos/220/160?random=3" alt="Image 3">
+            <img src="https://picsum.photos/220/160?random=4" alt="Image 4">
+            <img src="https://picsum.photos/220/160?random=5" alt="Image 5">
+        </div>
+        
+        <div class="local-image">
+            <h2>Local Image</h2>
+            <img src="/media/image1.jpg" alt="Local Image" loading="lazy">
+        </div>
+        
+        <div class="content">
+            <h2>Additional Information</h2>
+            <p>Here is some extra content to expand the page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+            <p>Praesent interdum velit id libero facilisis, nec dictum mauris tristique.</p>
+            <p>Donec sagittis libero id felis tristique, non vehicula metus auctor.</p>
+            <p>Curabitur a nisl at dui hendrerit vehicula ut non justo.</p>
+            <p>Etiam tincidunt malesuada nisi, in consectetur mauris consequat eu.</p>
+            <p>Donec maximus nisl ac urna pellentesque, vel fermentum purus vehicula.</p>
+        </div>
+    </div>
+</body>
+</html>
+
